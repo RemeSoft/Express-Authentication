@@ -1,0 +1,140 @@
+/* Font Imported  */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;900&family=Karla:wght@200;300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/* Root Start  */
+:root{
+    --priamry-font:'Karla', sans-serif;
+    --logo-font: 'Barlow', sans-serif;
+    --primary-color: #fff;
+    --color-nav: #2B3467;
+    --color-body: #BAD7E9;
+    --button-color: #66E8DC;
+    --color-disabled: rgb(128, 128, 128);
+}
+
+/* Css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SettingUp Font Size */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--priamry-font);
+}
+
+/* ---------------------------------------
+            Navbar Start
+------------------------------------- */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    height: 5rem;
+    background: var(--color-nav);
+}
+.navbar__menu{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.item__link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.item__link.active{
+    font-weight: bold;
+}
+
+.logo{
+    font-size: 2rem;
+    font-family: var(--logo-font);
+    color: var(--primary-color);
+}
+
+#content{
+    background: var(--color-body);
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content__main{
+    font-size: 15rem;
+    font-family: var(--logo-font);
+    font-weight: bolder;
+    opacity: 0.2;
+}
+
+
+/* LOGIN PAGE  */
+.form{
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    position: relative;
+}
+.alart{
+    background-color: #f8633a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-110%);
+    padding: 1rem;
+    border-radius: .5rem;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alart__close{
+    border: 0;
+    background: transparent;
+    color: var(--priamry-color);
+    font-size: 2rem;
+}
+.form__input{
+    margin-bottom: 1rem;
+    display: flex;
+    width: 25rem;
+    padding: .7rem;
+    border: .2rem solid #00000023;
+}
+.input__box{
+    flex-grow: 1;
+    border: 0;
+}
+.input__box:focus{
+    outline: none;
+}
+
+.input__icon{
+    color: #0000008a;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons__item--withBG{
+    padding: 1rem 1.5rem;
+    background-color: var(--button-color);
+    border: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+.button__item--withOutBG{
+    text-decoration: none;
+    color: var(--color-disabled);
+}

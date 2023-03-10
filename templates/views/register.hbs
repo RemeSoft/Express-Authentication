@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Auth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+
+    <main id="content">
+        <form action="/register" method="post" class="form">
+            <div class="alart">
+                This is a test alert
+                <button class="alart__close"><i class="bi bi-x"></i></button>
+            </div>
+            <div class="form__input">
+                <input class="input__box" type="text" name="name" placeholder="Enter your name">
+                <i class="input__icon bi bi-person"></i>
+            </div>
+            <div class="form__input">
+                <input class="input__box" type="text" name="email" placeholder="Enter your email">
+                <i class="input__icon bi bi-envelope"></i>
+            </div>
+            <div class="form__input">
+                <input class="input__box" type="text" name="phone" placeholder="Enter your phone">
+                <i class="input__icon bi bi-telephone"></i>
+            </div>
+            <div class="form__input">
+                <input class="input__box" type="password" name="password" placeholder="Enter your password.">
+                <i class="input__icon bi bi-lock"></i>
+            </div>
+            <div class="form__input">
+                <input class="input__box" type="password" name="Cpassword" placeholder="Confirm your password.">
+                <i class="input__icon bi bi-lock"></i>
+            </div>
+            <div class="buttons">
+                <a class="button__item--withOutBG" href="">Already Member?</a>
+                <button class="buttons__item--withBG" type="submit">LOGIN</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
